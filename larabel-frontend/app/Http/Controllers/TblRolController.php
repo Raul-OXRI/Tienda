@@ -2,11 +2,31 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\tbl_persona;
+use App\Models\tbl_rol;
 use Illuminate\Http\Request;
 
-class TblPersonaController extends Controller
+class TblRolController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -15,18 +35,16 @@ class TblPersonaController extends Controller
      */
     public function store(Request $request)
     {
-        $persona = new tbl_persona();
-        $data = $request->except('_token');
-        $persona::created($data);
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\tbl_persona  $tbl_persona
+     * @param  \App\Models\tbl_rol  $tbl_rol
      * @return \Illuminate\Http\Response
      */
-    public function show(tbl_persona $tbl_persona)
+    public function show(tbl_rol $tbl_rol)
     {
         //
     }
@@ -34,10 +52,10 @@ class TblPersonaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\tbl_persona  $tbl_persona
+     * @param  \App\Models\tbl_rol  $tbl_rol
      * @return \Illuminate\Http\Response
      */
-    public function edit(tbl_persona $tbl_persona)
+    public function edit(tbl_rol $tbl_rol)
     {
         //
     }
@@ -46,10 +64,10 @@ class TblPersonaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\tbl_persona  $tbl_persona
+     * @param  \App\Models\tbl_rol  $tbl_rol
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, tbl_persona $tbl_persona)
+    public function update(Request $request, tbl_rol $tbl_rol)
     {
         //
     }
@@ -57,10 +75,10 @@ class TblPersonaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\tbl_persona  $tbl_persona
+     * @param  \App\Models\tbl_rol  $tbl_rol
      * @return \Illuminate\Http\Response
      */
-    public function destroy(tbl_persona $tbl_persona)
+    public function destroy(tbl_rol $tbl_rol)
     {
         //
     }
