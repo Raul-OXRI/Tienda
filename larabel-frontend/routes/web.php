@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\TblClienteController;
 use App\Http\Controllers\VentafacturaController;
 
 Route::get('/', function () {
@@ -27,6 +28,12 @@ Route::get('/products/show/{id}', [ProductosController::class, 'show'])->name('p
 
 Route::get('/products/destroy/{id}', [ProductosController::class, 'destroy'])->name('products.destroy');
 
+// controlador clientes
+Route::get('/clientes', [TblClienteController::class, 'index'])->name('clientes.index');
+
+Route::get('/clientes/create', [TblClienteController::class, 'create'])->name('clientes.create');
+
+Route::post('/clientes/store', [TblClienteController::class, 'store'])->name('clientes.store');
 
 //route de tabla Ventafactura
 
