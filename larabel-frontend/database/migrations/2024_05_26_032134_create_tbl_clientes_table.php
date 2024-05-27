@@ -19,7 +19,6 @@ class CreateTblClientesTable extends Migration
             $table->string('apellido', 100);
             $table->string('telefono', 15); // Assuming the phone number can include special characters like +, -, etc.
             $table->string('address', 50);
-            $table->tinyInteger('estado'); // Assuming estado is a tiny integer (0 or 1), change data type as needed
             $table->timestamps();
         });
     }

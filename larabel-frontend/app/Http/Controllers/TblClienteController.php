@@ -16,7 +16,6 @@ class TblClienteController extends Controller
     {
         //inicia definición de index
         $datos = tbl_cliente::all();
-        
         return view('./paginas/clientes/views_clientes',compact('datos'));
     }
 
@@ -45,7 +44,7 @@ class TblClienteController extends Controller
         
         $data = $request->except("_token");
         
-        $data['validacion'] = 1;
+        $data['estado'] = 1;
         
         $cliente::create($data); 
 

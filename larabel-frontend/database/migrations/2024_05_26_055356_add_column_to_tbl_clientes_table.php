@@ -15,7 +15,7 @@ class AddColumnToTblClientesTable extends Migration
     {
         Schema::table('tbl_clientes', function (Blueprint $table) {
             //
-            $table->string('validacion', 50)->nullable();
+            $table->string('estado', 50)->nullable();
         });
     }
 
